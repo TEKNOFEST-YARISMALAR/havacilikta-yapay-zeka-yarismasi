@@ -5,7 +5,7 @@
 Bu depo, TEKNOFEST kapsamında düzenlenen "Havacılıkta Yapay Zeka Yarışması 2025" için resmi GitHub deposudur. Yarışma, yapay zeka teknolojilerini havadan görüntüler alanında kullanarak, bu alandaki bilgi birikimi ve yetişmiş insan gücünü artırmayı amaçlamaktadır.
 
 
-## Geçmiş sene veri setleri
+## Veri setleri
 
 [![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/drive/folders/18_VqLBbyTubVSWAXG_CgmuJWGCx0mcBd)
 
@@ -20,11 +20,11 @@ Bu depo, TEKNOFEST kapsamında düzenlenen "Havacılıkta Yapay Zeka Yarışmas�
 - Takımlar en az 2 ve en fazla 5 kişiden oluşmalıdır. Danışmanlar bu sayıya dahil değildir.
 
 ## Yarışma Görevleri
-
+- Nesne ve Pozisyon Tespiti Akış Diyagramı ![UYZ_Diagram](nesnetespiti.png)
 - [**Nesne Tespiti:**](https://github.com/TEKNOFEST-YARISMALAR/ulasimda-yapay-zeka-yarismasi/blob/main/nesne%20tespiti.gif) Uçan arabanın kamera verilerini kullanarak taşıt ve insanların tespit edilmesi.
   ![nesnetespit](nesne%20tespiti.gif)
 - [**Pozisyon Tespiti:**](https://github.com/TEKNOFEST-YARISMALAR/ulasimda-yapay-zeka-yarismasi/blob/main/pozisyon%20kestirimi.gif) Uçan arabanın GPS sistemleri devre dışı kaldığında görsel verilerle pozisyon kestirimi yapılması.
-  ![UYZ_Diagram](nesnetespiti.png)
+  
   ![pozisyonkestirim](pozisyon%20kestirimi.gif)
 ## Yarışma Görevlerinin Değerlendirilmesi
 - Nesne Tespiti: MAP (IOU treshold = 0.5)
