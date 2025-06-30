@@ -1,10 +1,11 @@
 class FramePredictions:
-    def __init__(self, frame_url, image_url, video_name, gt_translation_x, gt_translation_y):
+    def __init__(self, frame_url, image_url, video_name, gt_translation_x, gt_translation_y, gt_translation_z):
         self.frame_url = frame_url
         self.image_url = image_url
         self.video_name = video_name
         self.gt_translation_x = gt_translation_x
         self.gt_translation_y = gt_translation_y
+        self.gt_translation_z = gt_translation_z
         self.translations = []
         self.detected_objects = []
 

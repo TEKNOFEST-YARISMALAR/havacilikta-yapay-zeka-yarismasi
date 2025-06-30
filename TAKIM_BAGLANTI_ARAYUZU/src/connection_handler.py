@@ -124,27 +124,28 @@ class ConnectionHandler:
         logging.warning(f"{base_path} does not exist.")
         return None
     
-    def get_frames(self, retries=3, initial_wait_time=0.1):
+    def get_frames(self, force_download=False, retries=5, initial_wait_time=0.1):
         """
         Dikkat: Bir dakika içerisinde bir takım maksimum 5 adet get_frames isteği atabilmektedir.
         Bu kısıt yarışma esnasında yarışmacıların gereksiz istek atarak sunucuya yük binmesini
         engellemek için tanımlanmıştır. get_frames fonksiyonunu kullanırken bu kısıtı göz önünde
         bulundurmak yarışmacıların sorumluluğundadır.
         """
-        try:
-            # _images klasorunun mevcut olup olmadigini kontrol edelim
-            if os.path.exists(self.img_save_path):
-                # Eger _images klasoru olusturulmussa oturum ismimizi cekelim
-                session_name = self.get_session_name()
-                # Daha onceden indirilmis frameler var ise dosyadan o frameler yukleyelim.
-                frames = self.load_frames_from_file(session_name)
-                # framelerin oldugu dosyanin bos olmamasi durumunda
-                if frames:
-                    self.video_name = session_name + "/"
-                    logging.info("Frames file exists. Loading frames from file.")
-                    return frames
-        except:
-            logging.info("Frames file exists, but it is corrupted.")
+        if not force_download:
+            try:
+                # _images klasorunun mevcut olup olmadigini kontrol edelim
+                if os.path.exists(self.img_save_path):
+                    # Eger _images klasoru olusturulmussa oturum ismimizi cekelim
+                    session_name = self.get_session_name()
+                    # Daha onceden indirilmis frameler var ise dosyadan o frameler yukleyelim.
+                    frames = self.load_frames_from_file(session_name)
+                    # framelerin oldugu dosyanin bos olmamasi durumunda
+                    if frames:
+                        self.video_name = session_name + "/"
+                        logging.info("Frames file exists. Loading frames from file.")
+                        return frames
+            except:
+                logging.info("Frames file exists, but it is corrupted.")
 
             
         payload = {}
@@ -202,26 +203,27 @@ class ConnectionHandler:
         logging.warning(f"{base_path} does not exist.")
         return None
 
-    def get_translations(self, retries=3, initial_wait_time=0.1):
+    def get_translations(self, force_download=False, retries=5, initial_wait_time=0.1):
         """
           Dikkat: Bir dakika içerisinde bir takım maksimum 5 adet get_frames isteği atabilmektedir.
           Bu kısıt yarışma esnasında yarışmacıların gereksiz istek atarak sunucuya yük binmesini
           engellemek için tanımlanmıştır. get_frames fonksiyonunu kullanırken bu kısıtı göz önünde
           bulundurmak yarışmacıların sorumluluğundadır.
           """
-        try:
-            # _images klasorunun mevcut olup olmadigini kontrol edelim
-            if os.path.exists(self.img_save_path):
-                # Eger _images klasoru olusturulmussa oturum ismimizi cekelim
-                session_name = self.get_session_name()
-                # Daha onceden indirilmis translations var ise dosyadan o frameler yukleyelim.
-                translations = self.load_translations_from_file(session_name)
-                # translationlarin oldugu dosyanin bos olmamasi durumunda
-                if translations:
-                    logging.info("Translations file exists. Loading translations from file.")
-                    return translations
-        except:
-            logging.info("Translation json exists, but it is corrupted.")
+        if not force_download:
+            try:
+                # _images klasorunun mevcut olup olmadigini kontrol edelim
+                if os.path.exists(self.img_save_path):
+                    # Eger _images klasoru olusturulmussa oturum ismimizi cekelim
+                    session_name = self.get_session_name()
+                    # Daha onceden indirilmis translations var ise dosyadan o frameler yukleyelim.
+                    translations = self.load_translations_from_file(session_name)
+                    # translationlarin oldugu dosyanin bos olmamasi durumunda
+                    if translations:
+                        logging.info("Translations file exists. Loading translations from file.")
+                        return translations
+            except:
+                logging.info("Translation json exists, but it is corrupted.")
         
         payload = {}
         headers = {'Authorization': 'Token {}'.format(self.auth_token)}
@@ -252,7 +254,7 @@ class ConnectionHandler:
         logging.error("Failed to get translations after multiple retries. Loading translations from file.")
         return self.load_translations_from_file(session_name)
 
-    def send_prediction(self, prediction, retries=3, initial_wait_time=0.1):
+    def send_prediction(self, prediction, retries=5, initial_wait_time=0.1):
         """
         Dikkat: Bir dakika içerisinde bir takım maksimum 80 frame için tahmin gönderebilecektir.
         Bu kısıt yarışma esnasında yarışmacıların gereksiz istek atarak sunucuya yük binmesini

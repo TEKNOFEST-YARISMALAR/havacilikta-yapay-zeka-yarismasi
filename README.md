@@ -47,7 +47,7 @@ Puanlama, nesne tespiti ve pozisyon kestirimi görevlerinin başarısına göre 
 - **📑 Ön Tasarım Raporu Son Teslim Tarihi:** 25 Nisan 2025, saat 17:00  
 - **✅ 1. Ön Elemeyi Geçen Takımların Açıklanması (Ön Tasarım Raporu Sonuçlarına Göre):** 23 Mayıs 2025  
 - **❓ Takımlarla Soru-Cevap Toplantısı:** 23 - 30 Mayıs 2025  
-- **💻 Çevrim İçi Yarışma Simülasyonu:** 20 Haziran 2025  
+- **💻 Çevrim İçi Yarışma Simülasyonu:** 9 Temmuz 2025  
 - **✅ 2. Ön Elemeyi Geçen Takımların Açıklanması (Simülasyon Sonuçlarına Göre):** 18 Temmuz 2025  
 - **🏁 Yarışma Finalleri:** Ağustos - Eylül 2025  
 - **📘 Final Tasarım Raporu Son Teslim Tarihi:** Ağustos - Eylül 2025 (Kesin tarih daha sonra duyurulacaktır)

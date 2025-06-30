@@ -1,5 +1,5 @@
 # Yarışmacılar için Örnek Sunucu Bağlantı Arayüzü
-Bu repository Teknofest Ulaşımda Yapay Zeka yarışması değerlendirme sunucusuna (TUYZDS) örnek bağlantının kurulması için geliştirilmiştir.
+Bu repository Teknofest Havacılıkta Yapay Zeka yarışması değerlendirme sunucusuna (THYZDS) örnek bağlantının kurulması için geliştirilmiştir.
 Yarışmacılar örnek arayüzü ihtiyaçlarına göre güncelleyebilir ya da farklı bir dil ile (C++, vs) benzerini entegre edebilirler.
  
 

@@ -60,7 +60,7 @@ class ObjectDetectionModel:
         # Tahminler objesi FramePrediction sınıfında return olarak dönülmelidir.
         return frame_results
 
-    def detect(self, prediction,health_status):
+    def detect(self, prediction, health_status):
         # Modelinizle bu fonksiyon içerisinde tahmin yapınız.
         # results = self.model.evaluate(...) # Örnektir.
 
@@ -96,12 +96,14 @@ class ObjectDetectionModel:
             # Takimlar buraya kendi gelistirdikleri algoritmalarin sonuclarini entegre edebilirler.
             pred_translation_x = random.randint(1, 10) # Ornek olmasi icin rastgele degerler atanmistir takimlar kendi sonuclarini kullanmalidirlar.
             pred_translation_y = random.randint(1, 10) # Ornek olmasi icin rastgele degerler atanmistir takimlar kendi sonuclarini kullanmalidirlar.
+            pred_translation_z = random.randint(1, 10) # Ornek olmasi icin rastgele degerler atanmistir takimlar kendi sonuclarini kullanmalidirlar.
         else :
-            pred_translation_x = prediction.gt_translation_x
+            pred_translation_x = prediction.gt_translation_x # String
             pred_translation_y = prediction.gt_translation_y
+            pred_translation_z = prediction.gt_translation_z
 
         # Translation icin hesaplanilan degerleri sunucuya gondermek icin ilgili objeye dolduralim.
-        trans_obj = DetectedTranslation(pred_translation_x, pred_translation_y)
+        trans_obj = DetectedTranslation(pred_translation_x, pred_translation_y, pred_translation_z)
         prediction.add_translation_object(trans_obj)
 
         return prediction
