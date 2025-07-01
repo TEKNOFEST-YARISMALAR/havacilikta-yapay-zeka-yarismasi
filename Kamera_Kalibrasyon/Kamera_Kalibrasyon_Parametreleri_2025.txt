@@ -1,0 +1,19 @@
+Termal Camera Intrinsics
+                 IntrinsicMatrix: [3×3 double]
+                     FocalLength: [731.7965 732.0172]
+                  PrincipalPoint: [319.2367 251.2424]
+                            Skew: 0
+                RadialDistortion: [-0.3507 0.1137]
+            TangentialDistortion: [0 0]
+                       ImageSize: [512 640]
+
+
+
+RGB Camera Intrinsics
+                 IntrinsicMatrix: [3×3 double]
+                     FocalLength: [2.7922e+03 2.7952e+03]
+                  PrincipalPoint: [1.9880e+03 1.5622e+03]
+                            Skew: 0
+                RadialDistortion: [0.0798 -0.1867]
+            TangentialDistortion: [0 0]
+                       ImageSize: [3000 4000]
