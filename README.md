@@ -41,19 +41,19 @@ Puanlama, nesne tespiti ve pozisyon kestirimi görevlerinin başarısına göre 
 
 ## Takvim
 
-- **📄 Teknik Şartnamenin İlanı:** 24 Ocak 2025  
-- **📝 Yarışma Son Başvuru Tarihi:** 1 Mart 2025  
-- **🎥 Örnek Eğitim Videosunun (Etiketsiz) Teslimi:** 10 - 28 Mart 2025  
-- **📑 Ön Tasarım Raporu Son Teslim Tarihi:** 25 Nisan 2025, saat 17:00  
-- **✅ 1. Ön Elemeyi Geçen Takımların Açıklanması (Ön Tasarım Raporu Sonuçlarına Göre):** 23 Mayıs 2025  
-- **❓ Takımlarla Soru-Cevap Toplantısı:** 23 - 30 Mayıs 2025  
-- **💻 Çevrim İçi Yarışma Simülasyonu:** 9 Temmuz 2025  
-- **✅ 2. Ön Elemeyi Geçen Takımların Açıklanması (Simülasyon Sonuçlarına Göre):** 18 Temmuz 2025  
-- **🏁 Yarışma Finalleri:** Ağustos - Eylül 2025  
-- **📘 Final Tasarım Raporu Son Teslim Tarihi:** Ağustos - Eylül 2025 (Kesin tarih daha sonra duyurulacaktır)
+- **📄 Teknik Şartnamenin İlanı:** 16 Şubat 2026  
+- **📝 Yarışma Son Başvuru Tarihi:** 28 Şubat 2026  
+- **🎥 Örnek Eğitim Videosunun (Etiketsiz) Teslimi:** 10 - 28 Mart 2026  
+- **📑 Ön Tasarım Raporu Son Teslim Tarihi:** 22 Nisan 2026, saat 17:00  
+- **✅ 1. Ön Elemeyi Geçen Takımların Açıklanması (Ön Tasarım Raporu Sonuçlarına Göre):** 22 Mayıs 2026  
+- **❓ Takımlarla Soru-Cevap Toplantısı:** 1 - 6 Haziran 2026  
+- **💻 Çevrim İçi Yarışma Simülasyonu:** 9 Temmuz 2026  
+- **✅ 2. Ön Elemeyi Geçen Takımların Açıklanması (Simülasyon Sonuçlarına Göre):** 17 Temmuz 2026  
+- **🏁 Yarışma Finalleri:** Ağustos - Eylül 2026  
+- **📘 Final Tasarım Raporu Son Teslim Tarihi:** Ağustos - Eylül 2026 (Kesin tarih daha sonra duyurulacaktır)
 
 ## İletişim
 
-Daha ayrıntılı bilgiler için [Yarışmanın resmi web sitesi](https://teknofest.org/tr/competitions/competition/43)ni ziyaret edebilir  [Genel Şartname](https://cdn.teknofest.org/media/upload/userFormUpload/2025_HAVACILIKTA_YAPAY_ZEKA_TR_v3_Cr0FM.pdf) ve [Teknik Şartnameyi](https://cdn.teknofest.org/media/upload/userFormUpload/2025_TEKNOFEST_Havac%C4%B1l%C4%B1kta_Yapay_Zeka_Yarismasi_Teknik_Sartname_gzZkY.pdf) inceleyebilirsiniz.
+Daha ayrıntılı bilgiler için [Yarışmanın resmi web sitesi](https://teknofest.org/tr/yarismalar/havacilikta-yapay-zeka-yarismasi/)ni ziyaret edebilir  [Genel Şartname](https://cdn.teknofest.org/media/upload/userFormUpload/2026_HAVACILIKTA_YAPAY_ZEKA_TR_20_02_v2_gTb4Z.pdf) ve [Teknik Şartnameyi](https://cdn.teknofest.org/media/upload/userFormUpload/2026_HAVACILIKTA_YAPAY_ZEKA_TEKNIK_SARTNAME_TR_v1_2026_02_21_W48vr.pdf) inceleyebilirsiniz.
 
 Daha fazla bilgi ve sorularınız için [TEKNOFEST resmi web sitesi](https://www.teknofest.org) üzerinden bizimle iletişime geçebilirsiniz.
