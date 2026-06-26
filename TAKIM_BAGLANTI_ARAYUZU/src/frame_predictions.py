@@ -8,12 +8,16 @@ class FramePredictions:
         self.gt_translation_z = gt_translation_z
         self.translations = []
         self.detected_objects = []
+        self.reference_predictions = []
 
     def add_detected_object(self, detection):
         self.detected_objects.append(detection)
 
     def add_translation_object(self, translation):
         self.translations.append(translation)
+
+    def add_reference_prediction(self, ref_pred):
+        self.reference_predictions.append(ref_pred)
 
     def create_detected_objects_payload(self, evaulation_server):
         payload = []
@@ -29,10 +33,18 @@ class FramePredictions:
             payload.append(sub_payload)
         return payload
 
+    def create_reference_predictions_payload(self):
+        payload = []
+        for rp in self.reference_predictions:
+            sub_payload = rp.create_payload()
+            payload.append(sub_payload)
+        return payload
+
     def create_payload(self, evaulation_server):
         payload = {"frame": self.frame_url,
                    "detected_objects": self.create_detected_objects_payload(evaulation_server),
                    "detected_translations": self.create_translations_payload(evaulation_server),
+                   "reference_predictions": self.create_reference_predictions_payload(),
                    }
 
         return payload

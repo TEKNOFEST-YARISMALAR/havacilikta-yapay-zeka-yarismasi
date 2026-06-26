@@ -10,3 +10,8 @@ landing_statuses = {
     "Inilemez": "0",
     "Inis Alani Degil": "-1"
 }
+moving_statuses = {
+    "Hareketli": "1",
+    "Sabit": "0",
+    "Tasit Degil": "-1"
+}
